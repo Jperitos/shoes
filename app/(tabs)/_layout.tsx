@@ -34,7 +34,7 @@ export default function HomeScreen() {
             SoleCraft helps you quickly find and buy stylish, high-quality shoes—classic or exclusive, hassle-free.
           </Text>
           <TouchableOpacity style={styles.learnMoreBtn}>
-            <Text style={styles.learnMoreText}>Learn More</Text>
+            <Text style={styles.learnMoreText}>Get Started</Text>
           </TouchableOpacity>
         </View>
         <Image source={require("../../assets/images/shoe1.png")} style={styles.aboutImage} />
