@@ -16,10 +16,10 @@ const Header = () => (
 
 export default function HomeScreen() {
   const productImages = [
-    require("../../assets/images/shoe1.jpg"),
-    require("../../assets/images/shoe2.jpg"),
-    require("../../assets/images/shoe3.jpg"),
-    require("../../assets/images/shoe4.jpg"),
+    require("../../assets/images/shoe1.png"),
+    require("../../assets/images/shoe2.png"),
+    require("../../assets/images/shoe3.png"),
+    require("../../assets/images/shoe4.png"),
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function HomeScreen() {
             <Text style={styles.learnMoreText}>Learn More</Text>
           </TouchableOpacity>
         </View>
-        <Image source={require("../../assets/images/shoe5.jpg")} style={styles.aboutImage} />
+        <Image source={require("../../assets/images/shoe5.png")} style={styles.aboutImage} />
       </View>
 
       {/* Latest Products */}
