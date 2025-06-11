@@ -29,7 +29,6 @@ export default function HomeScreen() {
       {/* About Section */}
       <View style={styles.aboutSection}>
         <View style={styles.aboutTextContainer}>
-          <Text style={styles.aboutTitle}>About SoleCraft</Text>
           <Text style={styles.aboutText}>
             SoleCraft helps you quickly find and buy stylish, high-quality shoes—classic or exclusive, hassle-free.
           </Text>
@@ -42,6 +41,7 @@ export default function HomeScreen() {
 
       {/* Latest Products */}
       <Text style={styles.latestTitle}>Latest Products</Text>
+      <Text style={styles.latestall}>See All</Text>
       <View style={styles.productGrid}>
         {productImages.map((img, idx) => (
           <View key={idx} style={styles.productCard}>
@@ -96,39 +96,54 @@ const styles = StyleSheet.create({
   },
   aboutTextContainer: {
     flex: 1,
-    marginRight: 16,
+    marginRight: 12,
   },
+
   aboutTitle: {
     fontSize: 25,
     fontWeight: "bold",
     marginBottom: 10,
   },
-  aboutText: {
-    fontSize: 16,
-    marginBottom: 16,
-    color: "#333",
-  },
+ aboutText: {
+  fontSize: 16,
+  marginBottom: 16,
+  color: "#333",
+  padding: 20,
+  width: 200,
+  marginLeft: -20, // This shifts it left
+},
+
   learnMoreBtn: {
     backgroundColor: "#000",
     paddingHorizontal: 15,
     paddingVertical: 15,
-    borderRadius: 20,
+    borderRadius: 20, 
+    width: "40%",
   },
   learnMoreText: {
     color: "#fff",
     fontSize: 16,
     fontWeight: "600",
   },
-  aboutImage: {
-    width: 180,
-    height: 130,
-    resizeMode: "contain",
-  },
+aboutImage: {
+  width: 300,
+  height: 200,
+  resizeMode: "contain",
+  marginTop: -250, 
+  marginLeft: 120,
+},
   latestTitle: {
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
     marginVertical: 24,
+  },
+  latestall: {
+    fontSize: 14,
+    textAlign: "right",
+     marginHorizontal: 15, 
+     fontWeight: 400,
+     marginVertical: 19,
   },
   productGrid: {
     flexDirection: "row",
@@ -137,15 +152,16 @@ const styles = StyleSheet.create({
     paddingBottom: 32,
   },
   productCard: {
-    width: "44%",
-    marginBottom: 20,
-    backgroundColor: "#f9f9f9",
-    borderRadius: 10,
-    padding: 10,
+  width: "44%",
+  marginBottom: 20,
+  backgroundColor: "#f9f9f9",
+  borderRadius: 10,
+  padding: 12, 
+  alignItems: "center", 
   },
   productImage: {
     width: "100%",
-    height: 100,
+    height: 180,
     resizeMode: "contain",
   },
 });
